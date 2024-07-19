@@ -1,0 +1,21 @@
+<form [formGroup]="form1" (ngSubmit)="onSubmitForm1()">
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="name" required />
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="!form1.valid"
+  >
+    Invia
+  </button>
+</form>
+
+<form [formGroup]="form2">
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="name" required />
+  </mat-form-field>
+</form>
